@@ -1,0 +1,90 @@
+.navbar {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand a {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .navbar-links a:hover {
+    color: #ddd;
+  }
+  
+  .navbar-search {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .navbar-search input {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  .navbar-search button {
+    padding: 6px 10px;
+    border: none;
+    background-color: #555;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .navbar-search button:hover {
+    background-color: #777;
+  }
+  
+  /* Toggle Button for Mobile */
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon {
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  

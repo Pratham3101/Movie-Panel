@@ -1,0 +1,205 @@
+.details-section {
+  background-color: #223145;
+  display: flex;
+  height: 350px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.details-cast-section {
+  background-color: #404347;
+  padding: 20px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.item-images {
+  height: 348px;
+  width: auto;
+}
+
+.background-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.bg {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bg-items {
+  padding-left: 10px;
+}
+
+.details-title {
+  font-size: 2rem;
+  color: white;
+}
+
+.details-rating {
+  font-size: 18px;
+  color: #316eca;
+  margin-bottom: 12px;
+}
+
+.details-realise-date {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.genres {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.movie-item {
+  height: 150px;
+  width: 100px;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.overview {
+  padding-top: 0; 
+  margin-bottom: 5px; 
+}
+
+.paragraph {
+  padding-top: 0; 
+  margin-top: 0; 
+}
+
+/* Styles for the cast section */
+.cast {
+  padding: 20px;
+}
+
+.cast-heading {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #f5f5f5;
+}
+
+.cast-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; 
+  gap: 15px;
+  flex-wrap: wrap; 
+}
+
+.cast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 6 - 10px); 
+  max-width: 150px;
+  margin-bottom: 20px; 
+}
+
+.actor-image {
+  width: 100%; 
+  height: auto;
+  border-radius: 5px;
+}
+
+.actor-details {
+  margin-top: 10px;
+}
+
+.actor-name {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.character-name {
+  font-size: 0.9rem;
+  color: #b0c4de;
+}
+
+/* Add responsiveness */
+@media (max-width: 1024px) {
+  .details-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .details-title {
+    font-size: 1.5rem;
+  }
+
+  .details-rating,
+  .details-realise-date,
+  .genres {
+    font-size: 0.9rem;
+  }
+
+  .item-images {
+    height: auto;
+  }
+
+  .cast-item {
+    width: calc(100% / 4 - 10px); 
+  }
+
+  .actor-image {
+    width: 100%;
+    height: auto; 
+  }
+}
+
+@media (max-width: 600px) {
+  .cast-item {
+    width: calc(100% / 3 - 10px); 
+  }
+
+  .actor-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .cast-item {
+    width: calc(100% / 2 - 10px); 
+  }
+
+  .details-title {
+    font-size: 1.2rem;
+  }
+
+  .details-rating,
+  .details-realise-date,
+  .genres {
+    font-size: 0.8rem;
+  }
+
+  .actor-name {
+    font-size: 0.8rem;
+  }
+
+  .character-name {
+    font-size: 0.7rem;
+  }
+
+  .movie-item {
+    height: 100px;
+    width: auto;
+  }
+}
